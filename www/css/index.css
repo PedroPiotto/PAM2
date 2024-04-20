@@ -1,0 +1,36 @@
+body{
+    background-color: #ff0;
+    color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+#layout{
+    display: grid;
+    grid-template-areas: 
+    'top '
+    'mid '
+    'bot ';
+    grid-template-rows: 50px 50% 25px;
+}
+#top{
+    grid-area: top;
+    background-color: red;
+    height: 50px;
+}
+#mid{
+    grid-area: mid;
+    background-color: green;
+    height: auto;
+    display: grid;; 
+}
+#bot{
+    grid-area: bot;
+    background-color: blue;
+}
+#meio div{
+    text-align: center;
+    margin: 10px auto;
+    width: 25px;
+    background-color: pink;
+}
